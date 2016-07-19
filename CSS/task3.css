@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: Microsoft YaHei, serif;
+}
+body{
+    background: #68cdd5;
+}
+a:hover{
+    border:1px solid white;
+}
+a:link,a:visited {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header{
+    position: relative;
+    height: 60px;
+    background-color: #22292c;
+}
+.header p{
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    padding: 10px 0;
+    width: 80%;
+    color: white;
+    font-size: 30px;
+}
+.back{
+    float: left;
+    height: 40px;
+    width: 10%;
+    padding: 10px 0;
+}
+.title{
+    text-align: center;
+}
+.menu{
+    height: 21px;
+    width: 10%;
+    float: right;
+    padding: 20px 0;
+}
+.menu a{
+    height: 21px;
+    width: 47px;
+    margin: 0 auto;
+}
+.exit{
+    float: left;
+    margin: 10px 18px;
+}
+.logo{
+    position: relative;
+    clear: left;
+    margin: 10px auto;
+}
+.logo a:link,a:visited{
+    width: 181px;
+    height: 70px;
+}
+.logo a{
+    margin: 10px auto;
+}
+.content_text{
+    display: block;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin: 10% auto;
+    font-size: 50px;
+}
+.footer{
+    height: 109px;
+    margin:0 30%;
+    clear: both;
+}
+.left{
+    float: left;
+    width: 88px;
+}
+.left_text{
+    width: 88px;
+}
+.right{
+    float: right;
+    width: 88px;
+}
+.right_text{
+    width: 88px;
+}
