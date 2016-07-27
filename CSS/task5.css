@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: serif;
+    width: 100%;
+    min-width: 320px;
+}
+span{
+    display: inline-block;
+}
+.header{
+    background-color: #5fc0cd;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 40px;
+    padding: 25px 0;
+}
+.header img{
+    float: left;
+    left: 10px;
+}
+.loginbar{
+    background: url("../images/images_task5/bg.png");
+    width: 100%;
+    height: 168px;
+    background-size: cover;
+    padding: 84px 0;
+}
+.avatar{
+    display: inline-block;
+    float: left;
+    margin: 0 20px;
+}
+.maninfo{
+    float: left;
+    margin:5% 30px;
+    color: white;
+}
+.name{
+    font-size: 35px;
+}
+.age{
+    font-size: 30px;
+    margin-left: 30px;
+}
+.address{
+    font-size: 25px;
+}
+h1{
+    border-bottom: 1px solid #e1e5e7;
+    font-size: 35px;
+}
+.h1{
+    margin: 36px 30px;
+    border-left:4px solid #5fc0cd;
+    padding-left: 30px;
+}
+ul {
+    font-size: 35px;
+}
+ul li{
+    padding: 36px 30px;
+    border-bottom: 1px solid #e1e5e7;
+}
+.
