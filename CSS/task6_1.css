@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "STHeitiSC LIGHT","Microsoft YaHei",Georgia,sans-serif,Serif;
+    font-size: 35px;
+}
+img{max-width: 100%;}
+.window{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+.header{
+    padding: 2% 0;
+    background-color: #29bde0;
+}
+.header img{
+    position: relative;
+    left: 2%;
+}
+.history{
+    margin: 2% 4%;
+    padding: 2% 2% 2% 0;
+    text-align: center;
+    background-color: white;
+}
+.history img{
+    float: right;
+    margin: 0.5% 0;
+}
+.main{
+    position: relative;/*位了让后面的next针对main进行绝对定位*/
+    margin: 2% 4%;
+    border: 2px solid #c9c9c9;
+    background-color: white;
+}
+.title{
+    text-align: center;
+    color: #fbb435;
+    background-color: white;
+    padding: 3% 0;
+    border: 1px solid black;
+    border-bottom: 1px solid #fdd286;
+}
+.main ul{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid #fde1ae;
+    list-style-type: none;
+}
+.next{
+    display: block;
+    position: absolute;
+    top: 48%;
+    right: 2%;
+}
+.main li{
+text-align: center;
+}
+.main ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #69d1e9;
+    padding: 7% 10%;
+    margin: 6% 10%;
+}
+.main ul li a:hover{
+    background: gray;
+}
+.main ul li p{
+    font-size: 20px;
+}
+.page{
+    padding: 2% 38%;
+    zoom:1;
+    border: 1px solid black;
+    border-top: 0;
+}
+.page:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+.page a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    border-radius: 100%;
+    float: left;
+    margin: 1px 5%;
+}
+.page a:hover{
+    background-color: #29bde0;
+}
+.clear{
+    clear: both;
+}
