@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "STHeitiSC LIGHT","Microsoft YaHei",Georgia,sans-serif,Serif;
+    font-size: 35px;
+}
+img{max-width: 100%;}
+.window{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+.header{
+    text-align: center;
+    padding: 2% 0;
+    color: white;
+    background-color: #29bde0;
+    border-bottom: 1px solid #74d4eb;
+}
+.home{
+    float: left;
+    margin-left: 3%;
+}
+.more_info{
+    float: right;
+    margin-right: 3%;
+}
+.content{
+    background-color: #29bde0;
+}
+.result{
+    padding: 0 13%;
+    color: #ffc865;
+    margin: 0 auto 4% auto;
+    text-align: justify;
+}
+.result img{
+    display: block;
+   margin: 0 auto;
+    padding: 5% 0;
+}
+.statistic{
+    padding: 5% 13%;
+    font-size: 25px;
+    color: white;
+    line-height: 120%;
+}
+.statistic ul{
+    list-style-type: none;
+    margin: 2% 0;
+}
+.statistic ul li{
+    display: inline-block;
+    width: 30%;
+    white-space: pre-wrap;
+    word-spacing: 0.1em;
+}
+.detail{
+    background-color: white;
+}
+.detail ul{
+    list-style-type: none;
+}
+.detail li{
+    border-bottom: 1px solid black;
+    padding:0 13% 5% 13%;
+}
+.detail ul li p{
+    color: #bcbcbc;
+    font-size: 0.71em;
+}
+.date{
+    color: #515151;
+    display: inline-block;
+    margin: 2% 0;
+}
+.time{
+    color: #dcdcdc;
+    font-size: 0.57em;
+    float: right;
+    margin: 2% 0;
+}
+.footer{
+    width: 100%;
+    max-width: 640px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(41,189,224,0.8);
+    text-align: center;
+    zoom: 1;/*ie6 ie7清理浮动*/
+}
+/*ie 8以上清理浮动*/
+.footer:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.again,.submit{
+    width: 42%;
+    float: left;
+    padding: 2% 0;
+    margin: 3.9%;
+    font-size: 1.14em;
+    color: white;
+    border-radius: 10px;
+}
+.again{
+    background-color: #f66f6f;
+
+}
+.submit{
+    background-color: #fbb435;
+}
