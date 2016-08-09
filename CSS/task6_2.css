@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: "STHeitiSC LIGHT","Microsoft YaHei",Georgia,sans-serif,Serif;
+    font-size: 35px;
+}
+img{max-width: 100%;}
+.window{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #29bde0;
+    position: relative;
+}
+.header{
+    text-align: center;
+    color: white;
+    padding: 2% 0;
+}
+.menu{
+    float: left;
+    margin-left: 5%;
+}
+.close{
+    float: right;
+    margin-right: 5%;
+}
+.content{
+
+}
+.top{
+    font-size: 0.71em;
+    background-color: #b9e9f5;
+    padding: 3% 0;
+}
+.top span{
+    display: inline-block;
+    width: 50%;
+    margin-left: 7%;
+}
+.top img{
+    float: right;
+    margin: -1.5% 2.3% 0 0;
+}
+.tip{
+    position: relative;
+    padding: 3% 0;
+    color: white;
+    font-size: 0.71em;
+    text-indent: 3em;
+}
+.triangle{
+    display: block;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-top:14px solid #b9e9f5;
+    position: absolute;
+    left: 3em;
+    top: -3%;
+}
+.main{
+    zoom: 1;
+    /*height: 400px;*/
+    /*overflow:scroll;*/
+}
+.main:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.main ul{
+    list-style-type: none;
+}
+.headportrait{
+    float: left;
+    width: 22%;
+    height: 22%;
+    margin: 1% 5.6%;
+    text-align: center  ;
+}
+.headportrait_top{
+    border: 5px solid white;
+}
+.name{
+    padding: 28% 0;
+    background-color: #f5c97b;
+    font-size: 0.85em;
+}
+.number{
+    padding: 0 28%;
+    background-color: #83b09a;
+    color: white;
+    font-size: 0.7em;
+}
+.headportrait_bottom{
+    width: 100%;
+    height: 10%;
+    zoom: 1;
+}
+.headportrait_bottom:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.icon_1,.icon_2,.icon_3,.icon_4{
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: white;
+    margin: 15% 4.8% 5% 0;
+}
+.icon_1{
+  background-image: url('../images/images_task6_2/mysprite.png');
+  background-position: left -0px;
+}
+.icon_2{
+  background-image: url('../images/images_task6_2/mysprite.png');
+  background-position: left -30px;
+}
+.icon_3{
+  background-image: url('../images/images_task6_2/mysprite.png');
+  background-position: left -60px;
+}
+.icon_4{
+  background-image: url('../images/images_task6_2/mysprite.png');
+  background-position: left -90px;
+    margin-right: 0;
+}
+.footer{
+    width: 100%;
+    max-width: 568px;
+    position: fixed;
+    bottom: 0;
+    margin-left: 35px;
+    background-color: #29bde0;
+    border-top: 1px solid white;
+}
+.button{
+    text-align: center;
+    padding: 2% 0;
+    margin: 6% 10%;
+    background-color: #fbb435;
+    color: white;
+}
