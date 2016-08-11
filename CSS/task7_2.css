@@ -1,0 +1,72 @@
+.logo{
+    float: left;
+    margin-top: 2%;
+}
+.main{
+    zoom: 1;
+    padding: 0 5% 10% 5%;
+}
+.main:after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.main h1{
+    font-size: 1em;
+    color: #29b078;
+    font-weight: normal;
+    line-height: 300%;
+}
+.main h1 a{
+    text-decoration: none;
+    color: black;
+}
+.subnav{
+    float: left;
+    border: 2px solid #ededed;
+    border-radius: 5px;
+    width: 23%;
+}
+.subnav h2{
+    line-height: 300%;
+    border-bottom: 1px solid #ededed;
+    text-align: center;
+}
+.subnav li{
+    list-style-type: circle;
+    list-style-position: inside;
+    text-align: left;
+    padding: 0 30%;
+    color: #ff660f;
+    line-height: 300%;
+    clear: both;
+}
+.subnav li span{
+    color: #29b078;
+}
+.subnav li:hover{
+    text-decoration: underline;
+}
+.detail{
+    float: right;
+    width: 72%;
+    border: 2px solid #ededed;
+    border-radius: 10px;
+}
+.detail_top{
+    padding: 3% 4%;
+    text-indent: 2em;
+}
+.detail_top img{
+    float: left;
+}
+.detail_bottom{
+    padding: 3% 4%;
+    border-top: 1px solid #ededed;
+    clear: both;
+}
+.detail_bottom p{
+    text-indent: 2em;
+}
