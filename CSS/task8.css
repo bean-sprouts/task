@@ -1,0 +1,132 @@
+.content {
+    font-size: 0.8em;
+    padding: 0 5%;
+    background-color: #fafafa;
+}
+.path{
+    font-size: 1em;
+    line-height: 300%;
+}
+.path span{
+    color: #29b078;
+}
+.path a{
+    color: black;
+    text-decoration: none;
+}
+.menu {
+    list-style-type: none;
+    border-top: 1px solid #d0d6d9;
+    border-bottom: 1px solid #edf1f2;
+}
+.menu li{
+    display: inline-block;
+    margin: 2% 4%;
+}
+.menu .menu-title{
+    margin-left: 0;
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.menu a:hover{
+    background-color: #29b078;
+}
+.main-part{
+    clear: both;
+}
+.main-part h2{
+    line-height: 300%;
+    border-bottom: 1px solid #edf1f2;
+}
+.card{
+    width: 350px;
+    height: 455px;
+    float: left;
+    margin: 2% 1%;
+    background-color: white;
+    -webkit-box-shadow: 2px 2px #eeeded;
+    -moz-box-shadow: 2px 2px #eeeded;
+    box-shadow:  0 0 5px 2px #eeeded;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card-name img{
+    float: left;
+    margin: 4%;
+}
+.card-name b{
+    line-height: 300%;
+}
+.card-name p{
+    /*font-size: 1em;*/
+}
+.card-summary p{
+    border-top: 1px solid #edf1f2;
+    line-height: 300%;
+    float: left;
+    width: 50%;
+    padding-left: 5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card-summary img{
+    vertical-align: middle;
+    margin: 0 5%;
+}
+.card-summary-left{
+    border-right: 1px solid #edf1f2;
+}
+.card-summary-red{
+    color: red;
+    margin-left: 5px;
+}
+.card-salary-left{
+    float: left;
+    line-height: 1000%;
+    width: 40%;
+    text-align: center;
+    border-top: 1px solid #edf1f2;
+    border-right: 1px solid #edf1f2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card-salary-right{
+    float:left;
+    width: 60%;
+    border-top: 1px solid #edf1f2;
+    line-height: 333%;
+}
+.card-salary-right-left{
+    float: left;
+    margin-left: 3em;
+}
+.card-salary-right-right{
+    float: right;
+    margin-right: 3em;
+}
+.card-statistics p{
+    float: left;
+    line-height: 300%;
+    width: 100%;
+    border-top: 1px solid #edf1f2;
+    padding-left: 1em;
+}
+.card-statistics-red{
+    color: red;
+}
+/*清理浮动*/
+.card-name,.card-summary,.card-salary,.card-statistics{
+    zoom: 1;
+}
+.card-name:after,.card-summary:after,.card-salary:after,.card-statistics:after{
+    display: block;
+    clear: left;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}

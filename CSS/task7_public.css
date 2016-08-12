@@ -36,16 +36,21 @@
     margin: 0 2%;
     border-bottom: 4px solid #29b078;
 }
-#nav .current_page{
+#nav .current-page{
     border-bottom: 4px solid white;
 }
 #nav a:hover{
     border-bottom: 4px solid white;
 }
+.logo{
+    float: left;
+    margin-top: 2%;
+}
 #footer{
     padding: 1% 5% 0 5%;
     background-color: #26a26f;
     color: white;
+    clear: both;
 }
 #footer a{
     color: white;
@@ -59,16 +64,16 @@
 #footer a:hover{
     text-decoration: underline;
 }
-.footer_left,.footer_middle{
+.footer-left,.footer-middle{
     float: left;
     width: 30%;
     line-height: 250%;
 }
-.footer_right{
+.footer-right{
     float: right;
     line-height: 200%;
 }
-.footer_bottom{
+.footer-bottom{
     text-align: center;
     color: white;
     padding: 1% 0;

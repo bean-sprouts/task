@@ -1,7 +1,3 @@
-.logo{
-    float: left;
-    margin-top: 2%;
-}
 .main{
     zoom: 1;
     padding: 0 5% 10% 5%;
@@ -23,18 +19,18 @@
     text-decoration: none;
     color: black;
 }
-.subnav{
+.list{
     float: left;
     border: 2px solid #ededed;
     border-radius: 5px;
     width: 23%;
 }
-.subnav h2{
+.list h2{
     line-height: 300%;
     border-bottom: 1px solid #ededed;
     text-align: center;
 }
-.subnav li{
+.list li{
     list-style-type: circle;
     list-style-position: inside;
     text-align: left;
@@ -43,10 +39,10 @@
     line-height: 300%;
     clear: both;
 }
-.subnav li span{
+.list li span{
     color: #29b078;
 }
-.subnav li:hover{
+.list li:hover{
     text-decoration: underline;
 }
 .detail{
@@ -55,18 +51,18 @@
     border: 2px solid #ededed;
     border-radius: 10px;
 }
-.detail_top{
+.detail-top{
     padding: 3% 4%;
     text-indent: 2em;
 }
-.detail_top img{
+.detail-top img{
     float: left;
 }
-.detail_bottom{
+.detail-bottom{
     padding: 3% 4%;
     border-top: 1px solid #ededed;
     clear: both;
 }
-.detail_bottom p{
+.detail-bottom p{
     text-indent: 2em;
 }

@@ -1,4 +1,4 @@
-#content .carousel_figure{
+#content .carousel-figure{
     width: 100%;
     background-color: white;
     overflow: hidden;
@@ -8,10 +8,10 @@
     position: relative;
     /*自动滑动播放实现*/
     /*将动画捆绑到window选择器上，设置周期时长为10秒、播放次数为无限*/
-    animation: carousel_control 20s 3s infinite;
-    -moz-animation: carousel_control 20s 3s infinite ;/*Firefox*/
-    -webkit-animation: carousel_control 20s 3s infinite;/*Safari和Chrome*/
-    -o-animation: carousel_control 20s 3s infinite;/*Opera*/
+    animation: carousel-control 20s 3s infinite;
+    -moz-animation: carousel-control 20s 3s infinite ;/*Firefox*/
+    -webkit-animation: carousel-control 20s 3s infinite;/*Safari和Chrome*/
+    -o-animation: carousel-control 20s 3s infinite;/*Opera*/
 }
 #content .window:hover{
     animation-play-state: paused;
@@ -19,13 +19,13 @@
     -webkit-animation-play-state: paused;
     -o-animation-play-state: paused;
 }
-.carousel_figure img{
+.carousel-figure img{
     display: block;
     float: left;
     width: 25%;
 }
 /*自动滑动播放动画*/
-@keyframes carousel_control {
+@keyframes carousel-control {
     0% {left: 0;}
     25%  {left: -100%;}
     50%  {left: -200%;}
@@ -33,7 +33,7 @@
     100% {left: 0;}
 }
 /*Firefox*/
-@-moz-keyframes carousel_control {
+@-moz-keyframes carousel-control {
     0% {left: 0;}
     25%  {left: -100%;}
     50%  {left: -200%;}
@@ -41,7 +41,7 @@
     100% {left: 0;}
 }
 /*Safari和Chrome*/
-@-webkit-keyframes carousel_control {
+@-webkit-keyframes carousel-control {
     0%     {opacity: 1;left: 0;}
     18%  {opacity: 1;left: 0;}
     20%    {opacity: 1;left: -100%;}
@@ -55,7 +55,7 @@
     100%   {opacity: 1;left:0}
 }
 /*Opera*/
-@-o-keyframes carousel_control {
+@-o-keyframes carousel-control {
     0% {left: 0;}
     25%  {left: -100%;}
     50%  {left: -200%;}
@@ -67,63 +67,63 @@
     padding: 0 5%;
     list-style-type: none;
 }
-.main_part1{
+.main-part1{
     font-size: 0.8em;
     line-height: 30px;
     padding-top: 5%;
     zoom: 1;
 }
-.main_part1:after{
+.main-part1:after{
     display: block;
     clear: both;
     content: "";
     visibility: hidden;
     height: 0;
 }
-.main_p1_left{
+.main-p1-left{
     float: left;
     width: 20%;
     margin: 0 2%;
 }
-.main_p1_top{
+.main-p1-top{
     text-align: center;
     height: 80px;
     line-height: 55px;
 }
-.main_p1_top img{
+.main-p1-top img{
     vertical-align: bottom;
 }
-.main_p1_title{
+.main-p1-title{
     text-align: center;
     font-weight: bold;
 }
-.main_p1_content{
+.main-p1-content{
     text-align: left
 }
-.main_p1_right{
+.main-p1-right{
     float: left;
     width: 20%;
     border-left: 2px dashed #dedede;
     padding: 4% 0 4% 5%;
 }
-.main_part2{
+.main-part2{
     padding-top: 5%;
 }
-.main_part2 h1{
+.main-part2 h1{
     display: block;
     text-align: center;
     font-size: 1em;
     margin-bottom: 3%;
 }
-.main_part2 ul{
+.main-part2 ul{
     display: block;
     margin: 5% 0;
 }
-.main_part2 li{
+.main-part2 li{
     display: inline-block;
     vertical-align: middle;
 }
-.main_p2_number{
+.main-p2-number{
     background-color: white;
     border: 2px solid #e9e9e9;
     width: 40px;
@@ -132,20 +132,20 @@
     text-align: center;
     border-radius: 50%;
 }
-.main_p2_content{
+.main-p2-content{
     font-size: 0.8em;
     width: 15%;
     vertical-align: middle;
 }
-.main_part3{
+.main-part3{
     padding-top: 5%;
 }
-.main_part3 h1{
+.main-part3 h1{
     font-size: 1em;
     text-align: center;
     margin-bottom: 3%;
 }
-.main_p3_list li{
+.main-p3-list li{
     display: inline-block;
     width: 20%;
     background-color: white;
@@ -155,47 +155,47 @@
     margin: 0 1%;
     font-size: 0.8em;
 }
-.main_p3_head{
+.main-p3-head{
     text-align: center;
 }
-.main_p3_title{
+.main-p3-title{
     text-align: center;
     font-weight: bold;
     padding: 4% 0;
 }
-.main_p3_content{
+.main-p3-content{
     text-align: left;
 }
-.main_p3_dot{
+.main-p3-dot{
     text-align: center;
     margin: 1% 0;
 }
-.main_p3_dot li{
+.main-p3-dot li{
     display: inline-block;
     width: 10px;
     height: 10px;
     background-color: #29b078;
     border-radius: 50%;
 }
-.main_p3_dot li:hover{
+.main-p3-dot li:hover{
     background-color: white;
 }
-.main_part4{
+.main-part4{
     padding-top: 3%;
     text-align: center;
 }
-.main_part4 h1{
+.main-part4 h1{
     font-size: 1em;
 }
-.main_p4_img{
+.main-p4-img{
     margin: 5% 0;
 }
-.main_p4_img img{
+.main-p4-img img{
     width: 180px;
     height: 135px;
     border: 2px solid white;
 }
-.main_p4_img img:hover{
+.main-p4-img img:hover{
     border:2px solid #e9e9e9;
 }
 .links{
