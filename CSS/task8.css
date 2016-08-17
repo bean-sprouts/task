@@ -45,11 +45,12 @@
     width: 350px;
     height: 455px;
     float: left;
+    position: relative;
     margin: 2% 1%;
     background-color: white;
     -webkit-box-shadow: 2px 2px #eeeded;
     -moz-box-shadow: 2px 2px #eeeded;
-    box-shadow:  0 0 5px 2px #eeeded;
+    box-shadow:  0 0 5px 2px #eeeded;/*卡片阴影效果*/
     border-radius: 5px;
     overflow: hidden;
 }
@@ -60,9 +61,6 @@
 .card-name b{
     line-height: 300%;
 }
-.card-name p{
-    /*font-size: 1em;*/
-}
 .card-summary p{
     border-top: 1px solid #edf1f2;
     line-height: 300%;
@@ -71,10 +69,10 @@
     padding-left: 5%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box;/*使边框和内边距放入框内*/
 }
 .card-summary img{
-    vertical-align: middle;
+    vertical-align: -10%;
     margin: 0 5%;
 }
 .card-summary-left{
@@ -120,13 +118,63 @@
     color: red;
 }
 /*清理浮动*/
-.card-name,.card-summary,.card-salary,.card-statistics{
-    zoom: 1;
+.card-name,.card-summary,.card-salary,.card-statistics,.main-part{
+    zoom: 1;/*ie6和ie7*/
 }
-.card-name:after,.card-summary:after,.card-salary:after,.card-statistics:after{
+.card-name:after,.card-summary:after,.card-salary:after,.card-statistics:after,.main-part:after{
     display: block;
     clear: left;
     content: "";
     visibility: hidden;
     height: 0;
+}
+.card-bg{
+    position: absolute;
+    top: 0;
+    width: 290px;
+    height: 355px;
+    background-color: rgba(41,41,41,0.8);
+    border-radius: 5px;
+    color: white;
+    padding: 50px 30px;
+    opacity: 0;
+}
+.card-bg:hover{
+    -webkit-animation: card-bg 8s;
+    -o-animation: card-bg 8s;
+    -moz-animation: card-bg 8s;
+    animation: card-bg 8s;
+}
+@keyframes card-bg{
+    0%   {opacity: 0;}
+    20%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-moz-keyframes card-bg{
+    0%   {opacity: 0;}
+    20%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes card-bg{
+    0%   {opacity: 0;}
+    20%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-o-keyframes card-bg{
+    0%   {opacity: 0;}
+    20%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+.card-bg-title{
+    text-align: center;
+    line-height: 500%;
+}
+.card-bg-text{
+    text-align: justify;
+    line-height:150%;
+    text-indent: 2em;
 }
