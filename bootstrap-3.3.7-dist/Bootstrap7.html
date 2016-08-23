@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--浏览器解析设置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视窗设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap练习8</title>
+
+    <!-- 1、加载Bootstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 使IE8支持HTML5元素已经媒体查询(media queries) -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>辅助类</h1>
+    <h2>情境文本颜色</h2>
+    <p class="text-muted">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <p class="text-primary">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <p class="text-success">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <p class="text-info">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <p class="text-warning">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <p class="text-danger">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <hr />
+    <h2>情境背景色</h2>
+    <p class="bg-primary">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <p class="bg-success">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <p class="bg-info">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <p class="bg-warning">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <p class="bg-danger">鼠标经过时颜色可以加深，就像默认的链接一样。</p>
+    <hr />
+    <h2>关闭按钮、小三角、快速浮动</h2>
+    <div style="width: 200px;height: 200px;background-color: cornflowerblue;">
+        <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <span class="caret"></span>
+    </div>
+    <div class="center-block bg-info" style="width: 100px;height: 100px;">居中</div>
+    <div class="pull-left"><button type="button" class="btn btn-info">向左浮动</button></div>
+    <div class="pull-right"><button type="button" class="btn btn-info">向右浮动</button></div>
+    <br />
+    <h3>清理浮动</h3>
+    <div class="pull-left"><button type="button" class="btn btn-info">向左浮动</button></div>
+    <!-- Usage as a class -->
+    <div class="clearfix"></div>
+    <div class="pull-right"><button type="button" class="btn btn-info">向右浮动</button></div>
+    <hr/>
+    <h3>显示和隐藏</h3>
+    <div class="show text-danger bg-info">显示</div>
+    <div class="invisible">隐藏内容，但仍然占据文档流</div>
+    <div class="hidden">隐藏</div>
+    <hr/>
+    <h3>响应式工具</h3>
+    <div class="visible-xs-block bg-info">
+        这里是超小屏幕显示的内容
+    </div>
+    <div class="hidden-xs bg-warning">
+        这是超小屏幕隐藏的内容
+    </div>
+    <div class="visible-sm-block bg-primary">
+        这里是小屏幕显示的内容
+    </div>
+    <div class="visible-md-block bg-warning">
+        这里是中等屏幕显示的内容
+    </div>
+    <div class="visible-lg-block bg-danger">
+        这里是大屏幕显示的内容
+    </div>
+</div>
+<!-- 2、加载jQuery库 (必须在Bootstrap核心库之前加载) -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 3、加载Bootstrap核心库-->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
