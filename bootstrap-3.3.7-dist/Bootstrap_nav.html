@@ -1,10 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <meta charset="utf-8">
+    <!--浏览器解析设置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视窗设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap导航</title>
+
+    <!-- 1、加载Bootstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 使IE8支持HTML5元素已经媒体查询(media queries) -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
+<div class="container">
+    <h1>导航</h1>
+    <hr>
+    <h3>标签页</h3>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">首页</a></li>
+        <li role="presentation"><a href="#">介绍</a></li>
+        <li role="presentation"><a href="#">联系我们</a></li>
+    </ul>
+    <hr>
+    <h3>胶囊式标签页</h3>
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">首页</a></li>
+        <li role="presentation"><a href="#">介绍</a></li>
+        <li role="presentation"><a href="#">联系我们</a></li>
+    </ul>
+    <br>
+    <h3>垂直的胶囊式标签页</h3>
+    <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="#">首页</a></li>
+        <li role="presentation"><a href="#">介绍</a></li>
+        <li role="presentation" class="disabled"><a href="#">禁用链接</a></li>
+    </ul>
+    <h3>添加下拉菜单</h3>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">首页</a></li>
+        <li role="presentation" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                职位
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li class="presentation">A</li>
+                <li class="presentation">B</li>
+                <li class="presentation">C</li>
+            </ul>
+        </li>
+        <li role="presentation"><a href="#">联系我们</a></li>
+    </ul>
+    <br><br><br><br>
+</div>
 
+<!-- 2、加载jQuery库 (必须在Bootstrap核心库之前加载) -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 3、加载Bootstrap核心库-->
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

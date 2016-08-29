@@ -1,0 +1,136 @@
+body{
+    background-color: #fafafa;
+}
+.header-top{
+    background-color: white;
+}
+.navbar-default{
+    margin: 0;
+    background-color: #29b078;
+    border: 0;
+}
+.navbar-nav>li>a{
+    color: white!important;
+    padding: 30px;
+}
+.navbar-nav>li>a:hover{
+    border-bottom: 4px solid white;
+}
+.navbar-nav>.active>a{
+    background-color: #29b078!important;
+    border-bottom: 4px solid white;
+}
+.header-top{
+    line-height: 300%;
+}
+.tel{
+    color: #29b078;
+}
+.icon{
+    vertical-align: middle;
+}
+.icon>a{
+    margin-left: 8px;
+}
+.navbar-brand{
+    height: 100%;
+}
+.navbar-toggle{
+    margin-top: 23px;
+}
+.carousel-images > .carousel-indicators{
+    bottom: 0;
+}
+.main-part1{
+    padding-top: 3em;
+ }
+.main-part1  .thumbnail{
+    border: 0;
+    background-color: #fafafa;
+}
+.main-p1-right{
+    border-left: 2px dashed #dedede;
+    padding: 3em 2em;
+}
+.main-p1-right img,.main-part2 img{
+    max-width: 20px;
+}
+.main-p2-number{
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #e9e9e9;
+    -webkit-box-shadow: 0 0 1px 1px #e9e9e9;
+    -moz-box-shadow: 0 0 1px 1px #e9e9e9;
+    box-shadow: 0 0 1px 1px #e9e9e9;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.main-part2 .row{
+    margin: 2em 0;
+}
+.main-part2 .clearfix{
+    margin: 2em 0;
+}
+.main-part3 .row{
+    margin: 3em 0;
+}
+.main-part3 .thumbnail{
+    padding: 1em;
+}
+.main-part3 .carousel-indicators li{
+    background-color: white;
+}
+.main-part3 .carousel-indicators .active{
+    background-color: #29b078;
+}
+.main-p4-img{
+    margin: 5% 0;
+}
+.main-p4-img img{
+    width: 180px;
+    height: 135px;
+    border: 2px solid white;
+    /*margin: -1px;*/
+}
+.main-p4-img img:hover{
+    box-shadow: 0 0 4px 4px #e9e9e9;
+}
+.links {
+    background-color: white;
+    padding: 1em 0;
+}
+.links ul{
+    text-align: center;
+}
+.links li{
+    margin: 1% 1.8%;
+    font-size: 0.8em;
+    list-style-position: inside;
+    float: left;
+}
+.links a{
+    color: black;
+}
+.footer{
+    background-color: #26a26f;
+}
+.footer-top{
+    padding: 2em 0;
+    line-height: 200%;
+    color: white;
+}
+.footer-top a{
+    color: white;
+    margin-right: 1em;
+}
+.footer-top a + span{
+    margin-right: 1em;
+}
+.footer-bottom{
+    border-top: 1px solid #32c086;
+    line-height: 200%;
+    color: white;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--浏览器解析设置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视窗设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- 1、加载Bootstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 使IE8支持HTML5元素已经媒体查询(media queries) -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="media">
+        <div class="media-left media-middle">
+            <a href="#">
+                <img class="media-object" src="../images/images_task3/left.png" alt="LOGO"/>
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">这里是标题！</h4>
+            <p>媒体对象组件允许在一个内容块的左边或右边展示一个多媒体内容（图像、视频、音频）。</p>
+        </div>
+    </div>
+    <div class="media">
+        <div class="media-left media-middle">
+            <a href="#">
+                <img class="media-object" src="../images/images_task3/exit.png" alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">左侧图片居中对齐</h4>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                fringilla. Donec lacinia congue felis in faucibus.Donec sed odio dui. Nullam quis risus eget urna mollis
+                ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.</p>
+        </div>
+    </div>
+    <br>
+    <h4>媒体对象列表</h4>
+    <ul class="media-list">
+        <li class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="../images/images_task3/exit.png" alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">左侧图片居中对齐</h4>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                    purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                    fringilla. Donec lacinia congue felis in faucibus.Donec sed odio dui. Nullam quis risus eget urna mollis
+                    ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus.</p>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/images_task3/exit.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">左侧图片居中对齐</h4>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                            fringilla. Donec lacinia congue felis in faucibus.Donec sed odio dui. Nullam quis risus eget urna mollis
+                            ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                            mus.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <hr>
+    <h1>列表组</h1>
+    <ul class="list-group">
+        <li class="list-group-item"><span class="badge">11</span>列表组是灵活又强大的组件</li>
+        <li class="list-group-item"><span class="badge">2</span>不仅能用于显示一组简单的元素</li>
+        <li class="list-group-item">还能用于复杂的定制的内容</li>
+        <li class="list-group-item">最简单的列表组仅仅是一个带有多个列表条目的无序列表</li>
+        <li class="list-group-item"><span class="badge">5</span>可以根据自身的需求通过 CSS 自己定制</li>
+    </ul>
+    <h3>链接</h3>
+    <div class="list-group">
+        <a href="#" class="list-group-item active">用&lt;a&gt;标签代替&lt;li&gt;标签</a>
+        <a href="#" class="list-group-item">还要注意的是，我们需要将&lt;ul&gt;标签替换为&lt;div&gt;标签</a>
+        <a href="#" class="list-group-item list-group-item-warning">没必要给列表组中的每个元素都加一个父元素</a>
+        <a href="#" class="list-group-item list-group-item-success">没必要给列表组中的每个元素都加一个父元素</a>
+    </div>
+    <h3>按钮</h3>
+    <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-danger">列表组中的元素也可以直接就是按钮</button>
+        <button type="button" class="list-group-item list-group-item-info">也同时意味着父元素必须是&lt;div&gt;而不能用&lt;ul&gt;了</button>
+        <button type="button" class="list-group-item active">注意不要使用标准的 .btn 类！这里使用了active类</button>
+        <button type="button" class="list-group-item disabled">注意不要使用标准的 .btn 类！这里被禁用了</button>
+        <a href="#" class="list-group-item list-group-item-success">
+            <h4 class="list-group-item-heading">这是标题</h4>
+            <p class="list-group-item-text">列表组中的每个元素都可以是任何 HTML 内容，甚至是像下面的带链接的列表组。</p>
+        </a>
+    </div>
+</div>
+<!-- 2、加载jQuery库 (必须在Bootstrap核心库之前加载) -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 3、加载Bootstrap核心库-->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

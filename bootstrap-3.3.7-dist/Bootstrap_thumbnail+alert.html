@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--浏览器解析设置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视窗设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- 1、加载Bootstrap层叠样式表 -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 使IE8支持HTML5元素已经媒体查询(media queries) -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <h1>缩略图</h1>
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <a href="#">
+                    <img src="../images/images_task4/password.png" alt="图一">
+                </a>
+                <div class="caption">
+                    <h3>这是自定义内容caption</h3>
+                    <p>介绍文字等</p>
+                    <p><a href="#" class="btn btn-primary" role="button">按钮</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-9">
+            <a href="#" class="thumbnail">
+                <img src="../images/images_task4/phoneNumber.png" alt="图一">
+            </a>
+        </div>
+    </div>
+    <hr>
+    <h1>警告框</h1>
+    <div class="alert alert-warning alert-dismissable" role="alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <a href="#" class="alert-link">这是内部链接</a>
+        <strong>Warning!</strong>请仔细检查内容。点击右侧可关闭
+    </div>
+    <hr>
+    <h1>进度条</h1>
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger" style="min-width: 2em;">0%</div>
+    </div>
+    <h3>带动画效果和渐变效果的进度条</h3>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 80%;">80%</div>
+    </div>
+    <h3>堆叠效果</h3>
+    <div class="progress">
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 35%">
+                <span class="sr-only">35% Complete (success)</span>
+            </div>
+            <div class="progress-bar progress-bar-warning progress-bar-striped  active" style="width: 20%">
+                <span class="sr-only">20% Complete (warning)</span>
+            </div>
+            <div class="progress-bar progress-bar-danger" style="width: 10%">
+                <span class="sr-only">10% Complete (danger)</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 2、加载jQuery库 (必须在Bootstrap核心库之前加载) -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 3、加载Bootstrap核心库-->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

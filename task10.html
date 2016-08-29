@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--浏览器解析设置-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视窗设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>任务10</title>
+
+    <!-- 1、加载Bootstrap层叠样式表 -->
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/task10.css">
+
+    <!-- 使IE8支持HTML5元素已经媒体查询(media queries) -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<!--页面外围，控制整体布局宽度-->
+<div class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-7 tel">客服热线：010-594-78634</div>
+                <div class="col-xs-5 text-right icon">
+                    <a href="#"><img src="images/images_task7_1/weibo_icon.png"/></a>
+                    <a href="#"><img src="images/images_task7_1/qq_icon.png"/></a>
+                    <a href="#"><img src="images/images_task7_1/weixin_icon.png"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--导航栏-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">菜单</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/images_task7_2/logo.png" alt="LOGO"/>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">职业</a></li>
+                    <li><a href="#">推荐</a></li>
+                    <li><a href="#">关于</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="content">
+    <!--轮播图开始-->
+    <div id="carousel-images" class="carousel slide carousel-images" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-images" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-images" data-slide-to="1"></li>
+            <li data-target="#carousel-images" data-slide-to="2"></li>
+            <li data-target="#carousel-images" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/images_task7_1/banner-1.jpg" alt="你的浏览器禁用了JavaScript插件">
+            </div>
+            <div class="item">
+                <img src="images/images_task7_1/banner-2.jpg" alt="你的浏览器禁用了JavaScript插件">
+            </div>
+            <div class="item">
+                <img src="images/images_task7_1/banner-3.jpg" alt="你的浏览器禁用了JavaScript插件">
+            </div>
+            <div class="item">
+                <img src="images/images_task7_1/banner-4.jpg" alt="你的浏览器禁用了JavaScript插件">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-images" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-images" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--轮播图结束-->
+    <div class="main container">
+        <!--总体介绍部分-->
+        <div class="row main-part1">
+            <div class="col-xs-6 col-sm-3">
+                <div class="thumbnail">
+                    <img src="images/images_task7_1/gaoxiao.png"/>
+                    <div class="caption">
+                        <h3 class="text-center">高效</h3>
+                        <p>将五到七年的成长时间，缩短到一年到三年。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="thumbnail">
+                    <img src="images/images_task7_1/guifan.png"/>
+                    <div class="caption">
+                        <h3 class="text-center">规范</h3>
+                        <p>将五到七年的成长时间，缩短到一年到三年。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="thumbnail">
+                    <img src="images/images_task7_1/renmai.png"/>
+                    <div class="caption">
+                        <h3 class="text-center">人脉</h3>
+                        <p>将五到七年的成长时间，缩短到一年到三年。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 main-p1-right">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <img class="media-object" src="images/images_task7_1/people.png"/>
+                    </div>
+                    <div class="media-body">12400</div>
+                </div>
+                <p>累计在线学习人数</p>
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <img class="media-object" src="images/images_task7_1/people.png"/>
+                    </div>
+                    <div class="media-body">12400</div>
+                </div>
+                <p>累计在线学习人数</p>
+            </div>
+        </div>
+        <!--如何学习部分-->
+        <div class="row main-part2">
+            <h3 class="text-center">如何学习</h3>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <span class="main-p2-number">1</span>
+                        </div>
+                        <div class="media-body">
+                            <p>匹配你现在的个人情况寻找适合自己的岗位</p>
+                        </div>
+                        <div class="media-right media-middle">
+                            <a href="#">
+                                <img class="media-object" src="images/images_task7_1/to.png" alt="next"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <span class="main-p2-number">2</span>
+                        </div>
+                        <div class="media-body">
+                            <p>了解职业前景薪金待遇、竞争压力等</p>
+                        </div>
+                        <div class="media-right media-middle hidden-xs">
+                            <img class="media-object" src="images/images_task7_1/to.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <span class="main-p2-number">3</span>
+                        </div>
+                        <div class="media-body media-middle">
+                            <p>掌握行业内顶级技能</p>
+                        </div>
+                        <div class="media-right media-middle">
+                            <img src="images/images_task7_1/to.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <span class="main-p2-number">4</span>
+                        </div>
+                        <div class="media-body media-middle">
+                            <p>查看职业目标任务</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <span class="main-p2-number">5</span>
+                        </div>
+                        <div class="media-body">
+                            <p>参考学习资源，掌握技能点，逐个完成任务</p>
+                        </div>
+                        <div class="media-right media-middle">
+                            <a href="#">
+                                <img class="media-object" src="images/images_task7_1/to.png" alt="next"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <span class="main-p2-number">6</span>
+                        </div>
+                        <div class="media-body">
+                            <p>加入班级，和小伙伴们互帮互助，一块学习<</p>
+                        </div>
+                        <div class="media-right media-middle hidden-xs">
+                            <img class="media-object" src="images/images_task7_1/to.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <span class="main-p2-number">7</span>
+                        </div>
+                        <div class="media-body media-middle">
+                            <p>选择导师，一路引导，加速自己成长</p>
+                        </div>
+                        <div class="media-right media-middle">
+                            <img src="images/images_task7_1/to.png"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            <span class="main-p2-number">8</span>
+                        </div>
+                        <div class="media-body media-middle">
+                            <p>完成职业技能，升级业界大牛</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--优秀学员展示部分-->
+        <div id="good-students" class="carousel slide main-part3" data-interval="false">
+            <h1 class="text-center">优秀学员展示</h1>
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#good-students" data-slide-to="0" class="active"></li>
+                <li data-target="#good-students" data-slide-to="1"></li>
+            </ol>
+
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="images/images_task7_1/head1.png"/>
+                                <div class="caption">
+                                    <p class="text-center"><strong>技术顾问：罗大佑</strong></p>
+                                    <p class="text-justify">
+                                        百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="images/images_task7_1/head1.png"/>
+                                <div class="caption">
+                                    <p class="text-center"><strong>技术顾问：罗大佑</strong></p>
+                                    <p class="text-justify">
+                                        百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="images/images_task7_1/head1.png"/>
+                                <div class="caption">
+                                    <p class="text-center"><strong>技术顾问：罗大佑</strong></p>
+                                    <p class="text-justify">
+                                        百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="images/images_task7_1/head1.png"/>
+                                <div class="caption">
+                                    <p class="text-center"><strong>技术顾问：罗大佑</strong></p>
+                                    <p class="text-justify">
+                                        百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="images/images_task7_1/head1.png"/>
+                                <div class="caption">
+                                    <p class="text-center"><strong>技术顾问：罗大佑</strong></p>
+                                    <p class="text-justify">
+                                        百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="images/images_task7_1/head1.png"/>
+                                <div class="caption">
+                                    <p class="text-center"><strong>技术顾问：罗大佑</strong></p>
+                                    <p class="text-justify">
+                                        百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="images/images_task7_1/head1.png"/>
+                                <div class="caption">
+                                    <p class="text-center"><strong>技术顾问：罗大佑</strong></p>
+                                    <p class="text-justify">
+                                        百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="images/images_task7_1/head1.png"/>
+                                <div class="caption">
+                                    <p class="text-center"><strong>技术顾问：罗大佑</strong></p>
+                                    <p class="text-justify">
+                                        百度技术总监：互联网基础服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 轮播（Carousel）导航 不设置-->
+            </div>
+        </div>
+        <!--合作伙伴部分-->
+        <div class="row main-part4">
+            <h3 class="text-center">战略合作企业</h3>
+            <div class="main-p4-img text-center">
+                <a href="#">
+                    <img src="images/images_task7_1/partner1.jpg"/>
+                </a>
+                <a href="#">
+                    <img src="images/images_task7_1/partner2.jpg"/>
+                </a>
+                <a href="#">
+                    <img src="images/images_task7_1/partner3.jpg"/>
+                </a>
+                <a href="#">
+                    <img src="images/images_task7_1/partner4.jpg"/>
+                </a>
+                <a href="#">
+                    <img src="images/images_task7_1/partner5.jpg"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="links hidden-xs">
+        <h4 class="text-center">友情链接</h4>
+        <ul>
+            <li><a href="#">手机软件</a></li>
+            <li><a href="#"> 教师招聘</a></li>
+            <li><a href="#"> 找工作</a></li>
+            <li><a href="#"> 手机软件</a></li>
+            <li><a href="#"> 教师招聘</a></li>
+            <li><a href="#"> 找工作</a></li>
+            <li><a href="#"> 手机软件</a></li>
+            <li><a href="#"> 教师招聘</a></li>
+            <li><a href="#"> 找工作</a></li>
+            <li><a href="#"> 手机软件</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">手机软件</a></li>
+            <li><a href="#"> 教师招聘</a></li>
+            <li><a href="#"> 找工作</a></li>
+            <li><a href="#"> 手机软件</a></li>
+            <li><a href="#"> 教师招聘</a></li>
+            <li><a href="#"> 找工作</a></li>
+            <li><a href="#"> 手机软件</a></li>
+            <li><a href="#"> 教师招聘</a></li>
+            <li><a href="#"> 找工作</a></li>
+            <li><a href="#"> 手机软件</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-xs-12 col-sm-5 text-left">
+                <p>技能树—改变你我</p>
+                <br/>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">关于我们</a>
+            </div>
+            <div class="col-xs-12 col-sm-5 text-left">
+                <p>旗下网站</p>
+                <a href="#">草船云孵化器</a>
+                <a href="#">最强IT训练营</a><br>
+                <a href="#">葡萄藤轻游戏</a>
+                <a href="#">桌游精灵</a>
+            </div>
+            <div class="col-xs-12 col-sm-2 text-center">
+                <p>微信公众平台</p>
+                <img src="images/images_task7_1/gongzonghao.jpg"/>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center">
+        <p>Copyright @ 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号</p>
+    </div>
+</div>
+<!-- 2、加载jQuery库 (必须在Bootstrap核心库之前加载) -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 3、加载Bootstrap核心库-->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
