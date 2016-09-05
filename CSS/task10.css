@@ -3,6 +3,7 @@ body{
 }
 .header-top{
     background-color: white;
+    line-height: 300%;
 }
 .navbar-default{
     margin: 0;
@@ -19,9 +20,6 @@ body{
 .navbar-nav>.active>a{
     background-color: #29b078!important;
     border-bottom: 4px solid white;
-}
-.header-top{
-    line-height: 300%;
 }
 .tel{
     color: #29b078;

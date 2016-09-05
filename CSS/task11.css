@@ -1,0 +1,236 @@
+body{
+    background-color: #fafafa;
+}
+img{
+    max-width: 400px;
+}
+.header-top{
+    background-color: white;
+    line-height: 300%;
+}
+.navbar-default{
+    margin: 0;
+    background-color: #29b078;
+    border: 0;
+}
+.navbar-nav>li>a{
+    color: white!important;
+    padding: 30px;
+}
+.navbar-nav>li>a:hover{
+    border-bottom: 4px solid white;
+}
+.navbar-nav>.active>a{
+    background-color: #29b078!important;
+    border-bottom: 4px solid white;
+}
+.tel{
+    color: #29b078;
+}
+.icon{
+    vertical-align: middle;
+}
+.icon>a{
+    margin-left: 8px;
+}
+.navbar-brand{
+    height: 100%;
+}
+.navbar-toggle{
+    margin-top: 23px;
+}
+.breadcrumb{
+    background-color: #fafafa;
+    padding: 1.5em 0;
+    margin: 0;
+}
+.breadcrumb>li>a{
+    color: black;
+}
+.breadcrumb>.active{
+    color: #29b078;
+}
+.breadcrumb>li+li:before{
+    content: ">\00a0";
+}
+.nav-pills{
+    padding: 1em 0;
+    border-top: 1px solid #d0d6d9;
+}
+.nav-left>a{
+    padding-left: 0 !important;
+}
+.nav-pills{
+    border-bottom: 1px solid #edf1f2;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+    background-color: #29b078;
+}
+.nav-pills a{
+    color: black;
+    text-decoration: none;
+}
+/*卡片部分*/
+.card{
+    max-width: 350px;
+    max-height: 455px;
+    font-size: 0.8em;
+    float: left;
+    position: relative;
+    margin: 2% 1%;
+    background-color: white;
+    -webkit-box-shadow: 2px 2px #eeeded;
+    -moz-box-shadow: 2px 2px #eeeded;
+    box-shadow:  0 0 5px 2px #eeeded;/*卡片阴影效果*/
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card p{
+    margin: 0;
+}
+.card-name img{
+    float: left;
+    margin: 4%;
+}
+.card-name b{
+    line-height: 300%;
+}
+.card-summary p{
+    border-top: 1px solid #edf1f2;
+    line-height: 300%;
+    float: left;
+    width: 50%;
+    padding-left: 5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;/*使边框和内边距放入框内*/
+}
+.card-summary img{
+    vertical-align: -10%;
+    margin: 0 5%;
+}
+.card-summary-left{
+    border-right: 1px solid #edf1f2;
+}
+.card-summary-red{
+    color: red;
+    margin-left: 5px;
+}
+.card-salary-left{
+    float: left;
+    line-height: 1000%;
+    width: 40%;
+    text-align: center;
+    border-top: 1px solid #edf1f2;
+    border-right: 1px solid #edf1f2;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card-salary-right{
+    float:left;
+    width: 60%;
+    border-top: 1px solid #edf1f2;
+    line-height: 333%;
+}
+.card-salary-right-left{
+    float: left;
+    margin-left: 3em;
+}
+.card-salary-right-right{
+    float: right;
+    margin-right: 3em;
+}
+.card-statistics p{
+    float: left;
+    line-height: 300%;
+    width: 100%;
+    border-top: 1px solid #edf1f2;
+    padding-left: 1em;
+}
+.card-statistics-red{
+    color: red;
+}
+/*清理浮动*/
+.card-name,.card-summary,.card-salary,.card-statistics,.main-part{
+    zoom: 1;/*ie6和ie7*/
+}
+.card-name:after,.card-summary:after,.card-salary:after,.card-statistics:after,.main-part:after{
+    display: block;
+    clear: left;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+/*卡片背景特效*/
+.card-bg{
+    position: absolute;
+    top: 0;
+    max-width: 350px;
+    max-height: 455px;
+    background-color: rgba(41,41,41,0.8);
+    border-radius: 5px;
+    color: white;
+    padding: 50px 30px;
+    opacity: 0;
+}
+.card-bg:hover{
+    -webkit-animation: card-bg 8s;
+    -o-animation: card-bg 8s;
+    -moz-animation: card-bg 8s;
+    animation: card-bg 8s;
+}
+@keyframes card-bg{
+    0%   {opacity: 0;}
+    20%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-moz-keyframes card-bg{
+    0%   {opacity: 0;}
+    20%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes card-bg{
+    0%   {opacity: 0;}
+    20%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-o-keyframes card-bg{
+    0%   {opacity: 0;}
+    20%   {opacity: 1;}
+    80%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+.card-bg-title{
+    text-align: center;
+    line-height: 500%;
+}
+.card-bg-text{
+    text-align: justify;
+    line-height:150%;
+    text-indent: 2em;
+}
+
+.footer{
+    background-color: #26a26f;
+}
+.footer-top{
+    padding: 2em 0;
+    line-height: 200%;
+    color: white;
+}
+.footer-top a{
+    color: white;
+    margin-right: 1em;
+}
+.footer-top a + span{
+    margin-right: 1em;
+}
+.footer-bottom{
+    border-top: 1px solid #32c086;
+    line-height: 200%;
+    color: white;
+}
