@@ -70,6 +70,14 @@ img{
     color: black;
     text-decoration: none;
 }
+#content .row{
+    margin-bottom: 1em;
+}
+#content .row>h4{
+    line-height: 300%;
+    border-bottom: 1px solid #edf1f2;
+    font-weight: bold;
+}
 /*卡片部分*/
 .card{
     max-width: 350px;
@@ -83,7 +91,7 @@ img{
     -moz-box-shadow: 2px 2px #eeeded;
     box-shadow:  0 0 5px 2px #eeeded;/*卡片阴影效果*/
     border-radius: 5px;
-    overflow: hidden;
+    overflow: auto;
 }
 .card p{
     margin: 0;
@@ -167,7 +175,7 @@ img{
     position: absolute;
     top: 0;
     max-width: 350px;
-    max-height: 455px;
+    min-height: 434px;
     background-color: rgba(41,41,41,0.8);
     border-radius: 5px;
     color: white;
