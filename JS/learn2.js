@@ -90,3 +90,8 @@ alert(isNaN(true));    //返回false，true可以转换为1*/
 /*var box = '\u03a3';
 alert(box);   //返回Σ*/
 
+//Object对象类型
+var box = new Object(5);
+box = box + 100;
+alert(box);
+
