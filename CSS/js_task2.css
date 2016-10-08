@@ -1,0 +1,190 @@
+*{border:0;margin:0;padding:0}
+.wrap{
+    max-width: 640px;
+    height: 1100px;
+    margin:0 auto;
+    background-color: #f0f0f0;
+}
+.header{
+    color: white;
+    font-size: 35px;
+    line-height: 70px;
+    background-color: #29bde0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.back{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    float: left;
+    margin:0 20px;
+}
+.help{
+    display: block;
+    text-decoration: none;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.player-pb{
+    width: 600px;
+    height: 450px;
+    margin: 10px 20px;
+    background-color: #fbfbfb;
+}
+.player-pb-left{
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: white;
+    border-right: 1px solid #d9d9d9;
+    padding: 22% 8%;
+    box-sizing: border-box;
+}
+.player-pb-right{
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+.player-pb-content{
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+}
+.player-pb-content ul{
+    list-style-type: none;
+}
+.player-pb-content ul li{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    line-height: 300%;
+    font-size: 25px;
+    color: #b2b2b2;
+    /*word-spacing: 0.2em;*/
+}
+.player-pb-content ul li i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    margin-top: -0.3em;
+    margin-right: 0.5em;
+}
+.player-pb-btn{
+    height: 15%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #5ecde7;
+    border-top: 1px solid #d9d9d9;
+    cursor: pointer;
+}
+.word-group{
+    width: 600px;
+    height: 200px;
+    background-color: white;
+    margin: 10px 20px;
+}
+.word-group input{
+    display: block;
+    width: 90%;
+    height: 40%;
+    margin: 0 5%;
+    border-bottom: 2px solid #f0f0f0;
+    font-size: 25px;
+    outline: none;
+}
+.word-group input::-webkit-input-placeholder { /* WebKit browsers */
+    color:#d7d7d7;
+}
+.word-group input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#d7d7d7;
+}
+.word-group input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#d7d7d7;
+}
+.word-group input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#d7d7d7;
+    }
+.player-number{
+    width: 600px;
+    height: 190px;
+    background-color: white;
+    padding: 30px;
+    margin: 10px 20px;
+    box-sizing: border-box;
+}
+.player-number > p{
+    font-size: 25px;
+    line-height: 40px;
+}
+.player-number > p > span{
+    display: inline-block;
+    width: 3rem;
+    height: 40px;
+    margin: 0 0.5em;
+    background-color: #f4f5f5;
+    vertical-align: baseline;
+    text-align: center;
+    color: #fab344;
+}
+.player-number input{
+    width: 83%;
+    margin: 9% 0;
+    cursor: pointer;
+}
+/*清除滑动条默认样式*/
+.player-number input[type=range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /*appearance: none;*/
+}
+/*去掉蓝色边框*/
+.player-number input[type=range]:focus{
+    outline: none;
+}
+/*轨道样式*/
+.player-number input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    background-color: #fab344;
+}
+/*滑块样式*/
+.player-number input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /*appearance: none;*/
+    width: 60px;
+    height: 36px;
+    margin-top: -1rem; /*使滑块超出轨道部分的偏移量相等*/
+    background: url("../images/js_task2/btn.png") no-repeat;
+}
+.player-number > span{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: #fab344;
+    padding: 0 5px;
+    border: 1px solid #cccccc;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.footer{
+    width: 600px;
+    height: 90px;
+    line-height: 90px;
+    margin: 30px 20px;
+    color: white;
+    background-color: #fab344;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}

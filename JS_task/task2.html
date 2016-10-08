@@ -1,58 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>JS练习二</title>
-    <script src="../JS/learn2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>捉鬼游戏</title>
+    <link rel="stylesheet" href="../CSS/js_task2.css">
+    <script src="../JS/js_task2.js"></script>
 </head>
 <body>
-<h1>数据类型</h1>
-<p>typeof操作符可以获取变量的数据类型，会返回类型字符串。</p>
-<p>typeof操作符还可以用于区分function和object。</p>
-<p>数据类型包括Undefined、Null、Boolean、Number、String、Object六种，不允许自定义数据类型。</p>
-<h2>Undefined类型</h2>
-<p>只有一个值undefined，在使用var声明一个变量但没有对其初始化时，这个变量会被自动赋值为undefined。</p>
-<p>在使用typeof操作符检测时，未声明的变量和未赋值的变量都会返回undefined。</p>
-<h2>Null类型</h2>
-<p>只有一个值null，表示一个空对象引用（指针），typeof操作符检测会返回object。</p>
-<h2>Boolean类型</h2>
-<p>有两个值true和false，必须小写。</p>
-<p>true在数值上等于1，false在数值上等0。</p>
-<p>所有其他数据类型的值都可以转换为Boolean类型</p>
-<p>会转换为false的有false、空字符串、0或NaN（非数值）、null、undefined</p>
-<h2>Number类型</h2>
-<h3>整型</h3>
-<p>十进制、八进制、十六进制</p>
-<p>八进制必须用0开头</p>
-<p>十六进制必须用0x开头</p>
-<h3>浮点型</h3>
-<p>必须有小数点，并且小数点后面至少有一个数字</p>
-<p>如果小数点后面没有数值或者为0，会自动转换为整型</p>
-<p>过大或者过小的数值会自动用科学计数法表示（e表示法），e表示10的指数次幂。</p>
-<p>浮点数在运算时中可能会不精确，所以不要用浮点数做精确的判断,例如：0.1+0.2=0.3000000000004</p>
-<p>如果超出了浮点数的最小值则为负无穷-Infinity，超出最大为正无穷Infinity。可用Number.MIN_VALUE和Number.MAX_VALUE求最小最大值</p>
-<h3>NaN</h3>
-<p>非数值(Not a Number),表示一个本来应该返回数值的操作数未返回数值的情况。例如任何数值除以0在其他程序会报错，在JS中就会返回NaN。</p>
-<p>NaN进行任何运算的结果均为NaN，不于任何值相等（包括自身）。</p>
-<p>可以用isNaN()函数判断是否为NaN。使用中数字字符串、布尔值都可以自动转换为数值从而返回false。</p>
-<hr>
-<p>可以使用三个函数把非数值转换为数值：Number()、parseInt()、parseFloat()。</p>
-<h4>Number()</h4>
-<p>Boolean类型true和false分别转换成1和0，空对象null返回0，undefined返回NaN</p>
-<p>如果是字符串，数值字符串则直接转换为十进制数值，包含前导0的直接去掉0；浮点数值的字符串直接转换为浮点数，前导和后导的0直接去掉；空字符串则会返回0。</p>
-<h4>parseInt()</h4>
-<p>如果字符串第一个不是数值返回NaN，如果是数值从第一个开始取到最后一个连续数值结束，可以识别八进制和十六进制</p>
-<h4>parseFloat()</h4>
-<p>从第一位解析到非浮点数值位置，不识别八进制和十六进制。</p>
-<h2>String类型</h2>
-<p>用单引号或者双引号表示，两者没有区别</p>
-<h3>转义序列</h3>
-<p>\n 换行、\t 制表、\b 空格、\r 回车、\f 进纸、\\ 斜杠、\' 单引号、\" 双引号、\xnn 以16进制nn表示的一个字符，例如\x41、\unn 以十六进制nnn表示的一个Unicode字符，例如\u03a3</p>
-<p>给字符串重新赋值看起来是改变了字符串，实际上底层实现的时候，字符串变量初始化之后不能更改，只能销毁原字符串后重新赋值（改变了指针引用）。</p>
-<p>用toString()方法可以把值转换为字符串，可以传递参数2、8、16表示二进制、八进制、十六进制，不能转换null和undefined会报错。</p>
-<p>用String()函数可以把任何值转换为字符串，null会返回字符串'null'，undefined会返回'undefined'</p>
-<h2>Object类型</h2>
-<p>对象是一组数据和功能的集合。使用new操作符来创建。</p>
-<p>new Object()表示一个对象，new String('lee')、new Number(5)、new Boolean(true)分别表示字符串对象、数字对象、布尔值对象</p>
+    <div class="wrap">
+        <div class="header">
+            <a href="#" class="back">&lt;</a>
+            参数设置
+            <a href="#" class="help"><img src="../images/js_task2/help.png" alt="help"></a>
+        </div>
+        <div class="contain">
+            <div class="player-pb">
+                <div class="player-pb-left"> 玩家配比</div>
+                <div class="player-pb-right">
+                    <div class="player-pb-content" id="playerContent"></div>
+                    <div class="player-pb-btn" id="setBtn">点击设置
+                        <img src="../images/js_task2/edit.png" alt="edit">
+                    </div>
+                </div>
+            </div>
+            <div class="word-group">
+                <label for="sm"><input type="text" id="sm" placeholder="水民词组"/></label>
+                <label for="yl"><input type="text" id="yl" placeholder="幽灵词组"/></label>
+            </div>
+            <div class="player-number">
+                <p>玩家人数<span id="currentNum">0</span>人</p>
+                <span id="subNumBtn">&#45;</span>
+                <label><input type="range" min="3" max="20" value="3" step="1" id="numRange"/></label>
+                <span id="addNumBtn">&#43;</span>
+            </div>
+        </div>
+        <div class="footer">去发牌</div>
+    </div>
 </body>
 </html>

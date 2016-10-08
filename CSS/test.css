@@ -1,0 +1,18 @@
+#chuchuang {
+    width : 100%;
+    height : 400px;
+}
+#chuchuang > p{
+    line-height: 200%;
+}
+#chuchuang ul{
+    height: 197px;
+}
+#chuchuang > ul > li{
+    display: inline-block;
+    float: left;
+    width: 24%;
+    height: 196px;
+    border: 1px solid black;
+    margin: 2px;
+}

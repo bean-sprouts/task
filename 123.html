@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+    <META CHARSET=UTF-8 />
+    <TITLE>匀速动画</TITLE>
+    <STYLE TYPE="TEXT/CSS">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .left {
+            width: 200px;
+            height: 200px;
+            background: red;
+            position: relative;
+            left: -200px;
+        }
+
+        .share {
+            background: grey;
+            width: 1em;
+            height: 3em;
+            position: absolute;
+            left: 200px;
+            top: 75px;
+            line-height: 1.5em;
+        }
+    </STYLE>
+    <SCRIPT>
+        window.onload = function() {
+            var left=document.getElementById('left'),
+                    share=document.getElementById('share'),
+                    timer=null;
+            share.onmouseover=function() {
+                timer=setInterval(function() {
+                    left.style.left += 10+'px';
+                },30)
+            }
+        }
+    </SCRIPT>
+</HEAD>
+<BODY>
+<DIV CLASS="left" ID="left"> <SPAN CLASS="share" id="share">分享</SPAN>
+
+</DIV>
+</BODY>
+</HTML>
